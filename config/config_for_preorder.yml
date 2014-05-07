@@ -1,0 +1,11 @@
+btc_usd:
+  buy: 1048.5
+  sell: 1044
+btc_rur:
+  buy: 34499.99
+  sell: 34398.88
+usd_rur:
+  buy: 33.20699
+  sell: 33.19999
+
+
