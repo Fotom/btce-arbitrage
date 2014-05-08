@@ -57,10 +57,12 @@ Additionally script has minimalistic trading log for tracking: log/trading.log
 1 Check bid/ask for pairs BTC/RUR, BTC/USD, USD/RUR from btc-e.com through api
 
 2 Calculate possible profit for operation:
-  1) Buy BTC by RUR
-  2) Sell BTC by USD
-  3) Sell USD by RUR
-  Make trade if money win delta > predefined limit (set in lib/constants.rb). Taking into account the exchange commission
+```ruby
+    1) Buy BTC by RUR
+    2) Sell BTC by USD
+    3) Sell USD by RUR
+```
+  Make trade if money win delta more predefined limit (set in lib/constants.rb). Taking into account the exchange commission
 
 3 Calculate possible profit for preset order (same actions as in 2 step). Created order cannot be execute immediately. Preset order price set for positive win delta. We're just waiting for execution of the order at the suitable price
 
