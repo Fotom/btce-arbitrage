@@ -79,7 +79,7 @@ def start
     preorder = ArbitrageRURPreorder.new(arbitrage_rur)
     preorder.calc_ask_value!
 
-    params[:btc_rur_bid] = preorder.ask_value # понижаем границу bid до нашего значения, как будто он уже куплен (надеемся, что он будет куплен по этой цене)
+    params[:btc_rur_bid] = preorder.ask_value # downgrade bid limit to calculated value, expect order will executed by this price
     arbitrage_rur_preorder = ArbitrageRUR.new(params)
 
     puts Color.sea('***********')
